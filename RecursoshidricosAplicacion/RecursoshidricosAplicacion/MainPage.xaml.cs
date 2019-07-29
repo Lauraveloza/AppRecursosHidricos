@@ -9,9 +9,34 @@ namespace RecursoshidricosAplicacion
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage()
+                  public App()
+
         {
-            InitializeComponent();
-        }
+            //Consumption Alarm
+            Mainpage = new ContentPage
+            {
+                Content = new StackLayout
+                {
+                    VerticalOptions = LayoutOptions.Center
+                         Children = {
+                             new Label {
+                                 XAlign = TextAlignment.Center,
+                                 Text = "Welcome to consum0ption alarm!"
+
+                             }
+
+                         }
+
+
+                }
+            };
+
+
     }
-}
+        protected override void OnStart()
+        {
+            //Mandle when your app starts
+        }
+        protected override void OnSleep()
+
+
